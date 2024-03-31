@@ -1,0 +1,27 @@
+body {
+}
+
+table {
+  border-radius: 2px;
+  border: 2px;
+  border-style: solid;
+}
+td {
+  text-align: center;
+  padding: 5px 20px;
+  border: 2px solid;
+}
+
+th {
+  color: white;
+  background-color: blue;
+  border: 2px solid black;
+  padding: 5px 20px;
+}
+.lunch {
+  color: red;
+  border-color: black;
+}
+table > td {
+    
+}

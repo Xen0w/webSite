@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <script>//<![CDATA[
+      var s = false;
+      function l() {
+        setTimeout(f, 10000);
+        if (document.referrer) {
+          try {
+            var pm = /(^|&|\?)px=([^&]*)(&|$)/i;
+            var px = window.location.href.match(pm);
+            var rs = document.referrer;
+            if (px != null) {
+              if (rs.match(pm))
+                rs = rs.replace(pm, "$1px=" + px[2] + "$3");
+              else if (rs.indexOf("?") != -1)
+                rs = rs + "&px=" + px[2];
+              else
+                rs = rs + "?px=" + px[2];
+            }
+            history.replaceState({}, "Bing", rs);
+            window.addEventListener("pageshow", function(e) { if (e.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2)) window.location.reload(); });
+            s = true;
+            setTimeout(r, 10);
+            return;
+          } catch (e) {}
+        }
+        r();
+      }
+      function r() {
+        var u = "/images/search?q=shut up and listen imege&FORM=IQFRBA&id=A1E990BF63DE8000488B967F6E9CD7082CF48CD8";
+        if (s)
+          window.location.href = u;
+        else
+          window.location.replace(u);
+      }
+      function f() {
+        document.getElementById("fb").style.display = "block";
+      }
+      //]]>
+    </script>
+  </head>
+  <body onload="l()">
+    <div id="fb" style="display: none">
+      Please <a href="https://www.bing.com/ck/a?!&&p=e6eb13538fe24973JmltdHM9MTcwMzExNjgwMCZpZ3VpZD0xZjZjMzY5ZS05Njc4LTZjYjctMmFiZS0yNTc0OTdjMTZkZjgmaW5zaWQ9NTQ4OA&ptn=3&ver=2&hsh=3&fclid=1f6c369e-9678-6cb7-2abe-257497c16df8&u=a1L2ltYWdlcy9zZWFyY2g_cT1zaHV0IHVwIGFuZCBsaXN0ZW4gaW1lZ2UmRk9STT1JUUZSQkEmaWQ9QTFFOTkwQkY2M0RFODAwMDQ4OEI5NjdGNkU5Q0Q3MDgyQ0Y0OENEOA&ntb=F">click here</a> if the page does not redirect automatically ...
+    </div>
+  </body>
+</html>

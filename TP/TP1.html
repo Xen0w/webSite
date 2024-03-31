@@ -1,0 +1,72 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+<title>My first website</title>
+<link rel="stylesheet" href="tp1.css">
+</head>
+<body>
+    <p></p> 
+    <img src="../imags/shut.png" alt="profile">
+    <br><br>
+    <ul>
+        <li>appele</li>
+        <li>orange</li>
+        <li>coffee</li>
+    </ul>
+    <br>
+    <h1>INVOICE</h1>
+    <span><H3>Welcome to our server</H3></span>
+    <form id="dss" action="index.php" method="post" enctype="multipart/form-data" >
+
+        <fieldset >
+            <legend><label  for="provident">Provider?:</label></legend>
+            <div class="id">
+
+        <select class="ff" name="" id="provident" > 
+            <option value="provident1">provident1</option>
+            <option value="provident2">provident2</option>
+            <option value="provident3">provident3</option>        
+        </select>
+    </div>
+    </fieldset>
+
+        <H1>FILL IN FORM</H1>
+        <br>
+        <fieldset >
+            <legend>Information</legend>
+            <label  for="titel"></label>
+            <label for="Personnel"> Personnel</label>
+            <input class="ff" type="radio" value="Personnel" id="Personnel" name="titel" checked>
+            <label for="proficionel">Proficionel</label>
+            <input class="ff" type="radio" value="proficionel" id="proficionel" name="titel">
+            <br><br>
+        <label for="vatnbr">VAT Number</label>
+        <input class="ff" type="text"  id="vatnbr" placeholder="250000" minlength="6" maxlength="15" required>
+        <br><br>
+        <label for="Firstname">First Name</label>
+        <input class="ff" type="text"  id="Firstname" placeholder="flenn" minlength="6" maxlength="15" required>
+        <br><br>
+        <label for="lastname">Last Name</label>
+        <input class="ff" type="text"  id="lastname" placeholder="Ben" minlength="6" maxlength="15" required>
+        <br><br>
+        <label for="email">Email</label>
+        <input class="ff" type="email"  id="email" placeholder="Flenn.ben@gmail.com" minlength="6" maxlength="15" required>
+        <br><br>
+        <label for="phone">Phone</label>
+        <input class="ff" type="tel"  id="phone" placeholder="0561555107" minlength="6" maxlength="15" required>
+        <br><br>
+        <label for="adr">Adress</label>
+        <input class="ff" type="text"  id="adr" placeholder="123facksTRIT" minlength="6" maxlength="15" required>
+        <br><br>
+        <label for="POST">Postel Card</label>
+        <input class="ff" type="text"  id="POST" placeholder="paypall" minlength="6" maxlength="15" required>
+        <br><br>
+        <input   class="qsq" type="reset"><input  class="qsq" type="submit" value="Envoyer">
+
+    </fieldset>
+        <br> </form>
+
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+@font-face {
+    
+    src: url(fonts/Arbutus-Regular.ttf);
+    font-family:Arbutus-Regular ;
+}
+@font-face {
+    font-family: JosefinSlab;
+    src: url(fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+#body1{
+   /*border: 3px solid; */
+    display: flow-root;
+   /* margin: 44px;*/
+    background-image: url(imags/imgS.png);
+    background-repeat: no-repeat;
+   /* background-position: center;
+    background-attachment: fixed;
+    background-size: cover;*/
+}
+h1{
+    text-shadow: 3px 3px 5px red,-3px -4px 4px blue ;
+
+    border-style: solid;
+    border-width: 3px ;
+    border-color: purple;
+    border-radius: 20px;
+    font-family:Arbutus-Regular ;
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+}
+p{    display: flow-root;
+    border-bottom: 4px solid hsl(169, 72%, 19%) ;
+    color: aliceblue;
+    font-family: JosefinSlab;
+    border-top-right-radius: 15px;
+    border-top: 3px dotted hsl(349, 61%, 76%);
+    border-left: 3px solid hsl(120, 98%, 32%);
+}
+#mee{
+float: right;
+margin-right: 10 px ;
+
+}
+
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    /*margin: auto;*/
+
+}
+#box1{
+    
+    float: left;
+    margin-right: 44px
+    ;
+    width: 100px;
+    height: 100px;
+    background-color: hsl(208, 100%, 97%);
+    box-shadow: 7px 7px 5px ; 
+}
+#box2{ 
+    float: right;
+    margin-left:40px ;
+    background-color: blue;
+}
+#box3{
+    background-color: hsl(114, 69%, 46%);
+}
+#div2{
+    border: 2px solid;
+    height: 75px;
+    overflow: auto;
+
+
+}
+
+#dds{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+span{
+    
+    background-color: rgb(245, 85, 85);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.container{
+    background-color: gray;
+    height: 100vh;
+}
+.bad{
+    background-color: aliceblue;
+    border: 2px solid;
+
+    border: 2px solid;
+    padding: 25px;
+    box-sizing: border-box;
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center;
+    min-height: 50%;
+}
+#boxx{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: sticky;
+    left: 100px;
+    bottom: 0px;
+   
+
+}
+#boxx2{
+    width: 100px;
+    height: 100px;
+    background-color: hsl(0, 71%, 51%);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+#cont p{
+    border: 2px solid;
+    background-color: hsl(60, 87%, 64%);
+}
+a:link{
+    color: rgb(172, 123, 18);
+
+}
+a:hover{
+    color: rgb(218, 36, 36);
+    font-size: 1.1em;
+}
+a:active{
+    color: rgb(20, 20, 116);
+    font-size: 1.2em;
+
+}
+a:visited{
+    color: chartreuse;
+}
+ul{font-size: 1.5em;}
+li:hover{
+    background-color: yellow;
+}
+li:not(:hover){
+    background-color: aqua;
+
+}
+li:nth-child(3n+1){
+    background-color: blueviolet;
+}
+#greeting p{
+    background-color: rgb(53, 154, 83);
+    padding:  10px;
+    display: none;
+}
+#greeting:hover p{
+    display: block;
+}
+#h1pipi::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+#pipi::first-line{
+    color: black;
+    background-color: yellow;
+}
+#pipi::selection{
+    color: blue;
+    background-color: black;
+}
+#fruit li::before{
+    content: "✅";
+}
+#appel::after{
+    content: "🍏";
+}
+
+#orange::after{
+    content: "🍊";
+}
+#bannana::after{
+    content: "🍌";
+}
+#fruit li::marker {
+    content: "▰";
+    color: hsl(120, 100%, 69%);
+    font-size: 1.4em;
+}
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color: hsl(84, 58%, 50%);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){
+    background-color: rgb(184, 184, 184);
+    border-radius: 5px;
+}
+ .dropdown button{
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+ }
+ .dropdown a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+
+ }
+ 
+ .dropdown .con{
+
+    display: none;
+    position: absolute;
+    background-color: hsla(40, 18%, 97%, 0.55);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 100%, 1%, 0.489);
+ }
+ .dropdown:hover .con{
+    display: block;
+ }
+ .dropdown:hover button{
+    background-color: rgb(105, 114, 114);
+
+ }
+ .dropdown a:hover{
+    background-color: hsl(165, 2%, 38%);
+ }
+ .dropdown{
+    display: inline-block;
+    margin-bottom: 200px;
+ }
+ 
